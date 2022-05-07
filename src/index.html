@@ -13,6 +13,32 @@
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
-    </div>
+	</div>
   </body>
+  <script>
+	  document.querySelector('body').addEventListener("click", clickMe)
+	  function clickMe() {
+		let textDOM = document.createElement('article');
+		textDOM.innerHTML = 'Boom Boom Boom';
+		textDOM.classList.add("message")
+		let textDOM2 = document.createElement('article');
+		textDOM2.innerHTML = 'Boom Boom Boom 222';
+		textDOM2.classList.add("message")
+		let textDOM3 = document.createElement('article');
+		textDOM3.innerHTML = 'Boom Boom Boom 333';
+		textDOM3.classList.add("message")
+		let textDOM4 = document.createElement('article');
+		textDOM4.innerHTML = 'Boom Boom Boom 444';
+		textDOM4.classList.add("message")
+		let textDOM5 = document.createElement('article');
+		textDOM5.innerHTML = 'Boom Boom Boom 555';
+		textDOM5.classList.add("message")
+		document.querySelector('.main').appendChild(textDOM)
+		document.querySelector('.main').appendChild(textDOM2)
+		document.querySelector('.main').appendChild(textDOM3)
+		document.querySelector('.main').appendChild(textDOM4)
+		document.querySelector('.main').appendChild(textDOM5)
+
+	  }
+  </script>
 </html>
